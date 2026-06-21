@@ -7,11 +7,7 @@ const authRouter = require('./routes/auth')
 const app = express()
 const likesRouter = require('./routes/likes')
 
-app.use(cors({
-  origin: true,
-  methods: ['GET', 'POST', 'DELETE', 'PUT'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}))
+app.use(cors())
 app.use(express.json())
 // then all routes after
 
