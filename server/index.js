@@ -8,7 +8,7 @@ const app = express()
 const likesRouter = require('./routes/likes')
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://blog-sable-seven-4lf21qiqlp.vercel.app'],
+  origin: true,
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }))
